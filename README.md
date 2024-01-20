@@ -1,7 +1,7 @@
 # Toloka_Text_Ads_Assistant 
-Toloka is an online platform where one can perform tasksand get paid. One of the tasks include classifying text data. "Is the Ad a Good Match to the Search Term" is one such task.
-It involves classify text data dispayed by a web page given a user's search. The text data can be classified as either Good or Other.These are the labels of the data.
-With regards to this, I am creating a chatbot that will try to automatically classify the text data. This involves data scraping, data preparation and natural language processing (NLP)
-I have done manual data scraping from the task's page. I have stored the raw data obtained in MySQL software where I have prepared the data in appropriate tables, columns and rows.
-The table has 5 colums; Task_ID, User_Search_Term, Ad, Website and relevance.
-After data collection and preparation I exported the data to a local location in my PC in a csv format. The classification project was done on google colab and jupyter notebook. I have used 2 models which are multinomial naive_bayes machine learning model and LSTM deep learning and tried to make a comparison.
+Toloka is an online platform where one can perform tasksand get paid. One of the tasks include classifying text data. "Is the Ad a Good Match to the Search Term" is one such classification task.
+It involves classifying the relevance of text data dispayed by a web page given a user's search term, an Ad displayed and a website link associated to the Ad. The text data can be classified as either Good or Other.These are the labels of the data.
+With regards to this, I am creating a chatbot that will try to classify the text data, for ease of doing the online task. This involves data collection, data preparation and natural language processing (NLP)
+I only recorded the data in which I had over 80% accuracy because that accuracy guarantees higher pay. Accuracy of 60%<accuracy<80% is also fine but that would mean lesser pay. A higher accuracy also means the machine learning and deep learning models used for text classification would have a better performance as they would be trained on almost accurate data. I stored the raw data obtained in MySQL software where I prepared the data in appropriate tables, columns and rows.
+The table has 5 colums; Task_ID, User_Search_Term, Ad, Website and Relevance.
+After data collection and preparation I exported the data to a local location in my PC in a csv format. The classification project was done on google colab. I used several models for classification; both deep learning and machine learning, making comparisons thereafter.
